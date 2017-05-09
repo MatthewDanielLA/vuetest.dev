@@ -7,13 +7,28 @@
           rel='stylesheet' type='text/css'>
 
 
-    <div class="container">
-        <div id="app">
 
-                <button type="submit" @click="updateCount">
-                    Incremenet Counter: @{{ count }}
-                </button>
-            <pre> @{{ $data | json }} </pre>
-        </div>
-    </div>
+        <div id="app">
+            <counter subject="test1"> </counter>
+
+            <counter subject="test2"></counter>
+  </div>
+
+
+        <template id="counter-template">
+            <div>
+        <h1>@{{ subject }}</h1>
+        <button @click="count += 1">@{{ count }}</button>
+            </div>
+    </template>
+
+
+
+
+
+
+
+
+
+
 @stop

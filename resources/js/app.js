@@ -5,18 +5,21 @@
 
 
 
-new Vue({
-          el     : '#app',
-          data   : {
-            count: 0,
-          },
-          methods: {
-            updateCount: function() {
-              this.count += 1;
-            },
-          },
-
+  new Vue({
+          el        : '#app',
+          components: {
+            counter: {
+              template: '#counter-template',
+              props   : ['subject'],
+              data    : function () {
+                return {count: 0};
+              }
+            }
+          }
         });
+
+
+
 
 
 

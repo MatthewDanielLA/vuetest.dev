@@ -12,7 +12,7 @@ gulp.task('css', function () {
 gulp.task('bundle-libs', function () {
     return gulp.src([
         'node_modules/jquery/dist/jquery.min.js',
-         'node_modules/vue/dist/vue.min.js'
+         'node_modules/vue/dist/vue.js'
     ])
         .pipe(noprotocol.bundle('libs.min.js'))
         .on('error', noprotocol.notify)
