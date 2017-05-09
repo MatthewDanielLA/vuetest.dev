@@ -10,9 +10,9 @@
     <div class="container">
         <div id="app">
 
-            <form action="done.html" @submit.prevent="handleIt">
-             <button type="submit">Submit Me</button>
-            </form>
+                <button type="submit" @click="updateCount">
+                    Incremenet Counter: @{{ count }}
+                </button>
             <pre> @{{ $data | json }} </pre>
         </div>
     </div>

@@ -6,12 +6,16 @@
 
 
 new Vue({
-          el  : '#app',
-         methods: {
-            handleIt: function (e) {
-              alert('Handled');
-            }
-         }
+          el     : '#app',
+          data   : {
+            count: 0,
+          },
+          methods: {
+            updateCount: function() {
+              this.count += 1;
+            },
+          },
+
         });
 
 
