@@ -56,7 +56,7 @@
     // them only if you are absolutely positive that you know what you are
     // doing.
 
-    "asi"           : false,    // Tolerate Automatic Semicolon Insertion (no semicolons).
+    "asi"           : true,    // Tolerate Automatic Semicolon Insertion (no semicolons).
     "boss"          : true,    // Tolerate assignments inside if, for & while. Usually conditions & loops are for comparison, not assignments.
     "debug"         : false,    // Allow debugger statements e.g. browser breakpoints.
     "eqnull"        : false,    // Tolerate use of `== null`.
@@ -80,7 +80,7 @@
     "smarttabs"     : false,    // Tolerate mixed tabs and spaces when the latter are used for alignmnent only.
     "shadow"        : false,    // Allows re-define variables later in code e.g. `var x=1; x=2;`.
     "sub"           : false,    // Tolerate all forms of subscript notation besides dot notation e.g. `dict['key']` instead of `dict.key`.
-    "supernew"      : false,    // Tolerate `new function () { ... };` and `new Object;`.
+    "supernew"      : true,    // Tolerate `new function () { ... };` and `new Object;`.
     "validthis"     : false,    // Tolerate strict violations when the code is running in strict mode and you use this in a non-constructor function.
 
     // == Environments ====================================================

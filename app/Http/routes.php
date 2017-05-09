@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'PagesController@noprotocol');
+Route::get('/', 'PagesController@dobForm');
 Route::get('robots.txt', 'RobotsController@index');
 
 Route::controllers([

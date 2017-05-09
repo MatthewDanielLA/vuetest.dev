@@ -14,12 +14,12 @@ class PagesController extends Controller {
 	/**
 	 * Show the splash screen for the proejct generated via Yeoman
 	 *
-	 * @return Response
+	 * @return  \Illuminate\Contracts\View\Factory|\Illuminate\View\View
 	 */
-	public function noprotocol()
+	public function dobForm()
 	{
 		$app = app();
-		return view('noprotocol')->with(['version' => $app->version(), 'environment' => $app->environment()]);
+		return view('dobform')->with(['environment' => $app->environment()]);
 	}
 
 }
