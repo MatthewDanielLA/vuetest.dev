@@ -8,7 +8,7 @@
 new Vue({
           el  : '#app',
          methods: {
-            handleIt: function () {
+            handleIt: function (e) {
               alert('Handled');
             }
          }
