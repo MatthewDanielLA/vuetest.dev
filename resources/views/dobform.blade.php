@@ -10,7 +10,7 @@
     <div class="container">
         <div id="app">
 
-            <form action="done.html" v-on:submit.prevent="handleIt">
+            <form action="done.html" @submit="handleIt">
              <button type="submit">Submit Me</button>
             </form>
             <pre> @{{ $data | json }} </pre>
