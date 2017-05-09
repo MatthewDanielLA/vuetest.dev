@@ -10,7 +10,7 @@
     <div class="container">
         <div id="app">
 
-            <form action="done.html" @submit="handleIt">
+            <form action="done.html" @submit.prevent="handleIt">
              <button type="submit">Submit Me</button>
             </form>
             <pre> @{{ $data | json }} </pre>
